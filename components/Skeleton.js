@@ -1,0 +1,1 @@
+export default function Skeleton() { return <div className="generation" aria-hidden="true"><div className="skeleton"/><div className="image-grid">{Array.from({length:4},(_,i)=><div className="skeleton" key={i}/>)}</div></div>; }

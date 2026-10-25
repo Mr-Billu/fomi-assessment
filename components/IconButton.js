@@ -1,0 +1,1 @@
+export default function IconButton({ label, children, onClick, className = "" }) { return <button type="button" aria-label={label} title={label} onClick={onClick} className={`nav-icon ${className}`}>{children}</button>; }

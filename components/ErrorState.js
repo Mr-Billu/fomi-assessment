@@ -1,0 +1,1 @@
+export default function ErrorState({ onRetry }) { return <div className="error-state" role="alert"><strong>We could not complete that generation.</strong><span>Check your prompt and try again.</span><button type="button" onClick={onRetry}>Retry</button></div>; }

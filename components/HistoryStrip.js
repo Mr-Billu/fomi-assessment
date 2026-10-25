@@ -1,0 +1,3 @@
+"use client";
+import Image from "next/image";
+export default function HistoryStrip({ items, onSelect }) { return <section className="history" aria-label="Generation history"><button className="history-label" onClick={() => document.querySelector(".history-list")?.scrollBy({ left: 340, behavior: "smooth" })}>History<small>View all</small></button><div className="history-list">{items.map(item => <button key={item.id} aria-label={`Load history: ${item.prompt}`} onClick={() => onSelect(item)} style={{ padding: 0, border: 0, background: "none" }}><Image className="history-thumb" src={item.image} alt={item.prompt} width={46} height={46}/></button>)}</div></section>; }

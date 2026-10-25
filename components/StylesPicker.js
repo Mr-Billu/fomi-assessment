@@ -1,0 +1,2 @@
+"use client";
+export default function StylesPicker({ selected, onChange }) { return <div className="style-list">{["Photorealistic", "Cinematic", "Editorial", "Watercolor", "3D render"].map(style => <button type="button" key={style} className={`style-chip ${selected.includes(style) ? "selected" : ""}`} aria-pressed={selected.includes(style)} onClick={() => onChange(selected.includes(style) ? selected.filter(item => item !== style) : [...selected, style])}>{style}</button>)}</div>; }
